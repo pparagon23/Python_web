@@ -1,1 +1,1 @@
-module.exports = {"siteUrl": "http://localhost:3000", "generateRobotsTxt": true}
+module.exports = {"siteUrl": "https://pparagondev.reflex.run", "generateRobotsTxt": true, "outDir": "_static"}

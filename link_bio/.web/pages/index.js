@@ -12,228 +12,6 @@ import NextHead from "next/head"
 
 
 
-export function Link_e98eaf708c63b998e9b9ab939c0679b5 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.amazon.com.mx/ref=nav_logo`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
-  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <img alt={`My publicInbox`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/id-card-solid.svg`}/>
-  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
-  {`My publicInbox`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
-  {`Respuesta rapida y con preferencia`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_3a019339ad2d60af43f2d78cae79ae7d () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.youtube.com/watch?v=n2YrGsXJC6Y`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
-  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <img alt={`Mouredev Aprende Python web FLEX`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/python.svg`}/>
-  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
-  {`Mouredev Aprende Python web FLEX`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
-  {`Video tutorial de 7 horas desde cero`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_e406046821f422d4c59c1e05c38a4a86 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/mouredev/python-web`} passHref={true}>
-  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <img css={{"height": "1.5em", "weight": "1.5em"}} src={`/GitHub2.jpeg`}/>
-  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "marginTop": "-0.5em"}}>
-  {`  donde la magia se vuelve real,tsn real que solo las personas mas exitosas
-                    lo pueden ver y resolver
-                    `}
-</RadixThemesText>
-</RadixThemesFlex>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_f7f66512488193832beab40a6ebb59dd () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://fedoraproject.org/es/`} passHref={true}>
-  <img alt={`fedora`} css={{"width": "2em"}} src={`/icons/fedora.svg`}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_d719f690c27676ece6184d1d5a3c1ceb () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.redhat.com/es`} passHref={true}>
-  <img alt={`redhad`} css={{"width": "2em"}} src={`/icons/redhat.svg`}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_d6e7bcf047e9922d6cabe6c9513bf3da () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.linux.org/`} passHref={true}>
-  <img alt={`Linux`} css={{"height": "4em", "width": "auto"}} src={`/Linux.jpeg`}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_e8d310653ad6f967152a327fed3eac56 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://lucide.dev/icons/`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
-  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <img alt={`ICON Tutoriales`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/apple.svg`}/>
-  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
-  {`ICON Tutoriales`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
-  {`Ejemplos de iconos precargados`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_f159e51f9d702aa9f97767ba881ecca3 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.facebook.com/jose.aragonlaguna?locale=es_LA`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
-  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <img alt={`facebook`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/facebook.svg`}/>
-  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
-  {`facebook`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
-  {`familia y consejos`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_836876734fb2f591f67d0f7f4a802dbb () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.youtube.com/channel/UCzPoiGtg9DKxb3YpB0x5VyQ`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
-  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <img alt={`youtube canal primario`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/youtube.svg`}/>
-  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
-  {`youtube canal primario`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
-  {`emprendimiento en proceso`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_54815c0d8c302401900e5bae7d8a8720 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://github.com/`} passHref={true}>
-  <img alt={`github`} css={{"height": "4em", "width": "auto"}} src={`/GitHub.jpeg`}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_f9216fecd0a81fb423fa5cbbd036d214 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.tiktok.com/@pepearagonlaguna`} passHref={true}>
-  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
-  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <img alt={`Tiktok`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/tiktok.svg`}/>
-  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
-  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
-  {`Tiktok`}
-</RadixThemesText>
-  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
-  {`Videos mas vistos`}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesFlex>
-</RadixThemesButton>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
 export function Link_a6079094cfa365ac6513a3bbfb594d57 () {
 
 
@@ -259,22 +37,48 @@ export function Link_a6079094cfa365ac6513a3bbfb594d57 () {
   )
 }
 
-export function Link_e840c43d2b70cdbf996242e0158f6dd2 () {
+export function Link_f7f66512488193832beab40a6ebb59dd () {
 
 
 
   return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(false) ? `_blank` : ``}>
-  <NextLink href={`/cursos`} passHref={true}>
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://fedoraproject.org/es/`} passHref={true}>
+  <img alt={`fedora`} css={{"width": "2em"}} src={`/icons/fedora.svg`}/>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_54815c0d8c302401900e5bae7d8a8720 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://github.com/`} passHref={true}>
+  <img alt={`github`} css={{"height": "4em", "width": "auto"}} src={`/GitHub.jpeg`}/>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_f159e51f9d702aa9f97767ba881ecca3 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.facebook.com/jose.aragonlaguna?locale=es_LA`} passHref={true}>
   <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
   <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <img alt={`Cursos Gratis`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/paperclip.svg`}/>
+  <img alt={`facebook`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/facebook.svg`}/>
   <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
   <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
-  {`Cursos Gratis`}
+  {`facebook`}
 </RadixThemesText>
   <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
-  {`Consulta cursos para aprender programaciòn`}
+  {`familia y consejos`}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -309,6 +113,133 @@ export function Link_dfa86bbb7721768ff4bdfbb9b0489ba9 () {
   )
 }
 
+export function Link_e98eaf708c63b998e9b9ab939c0679b5 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.amazon.com.mx/ref=nav_logo`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
+  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
+  <img alt={`My publicInbox`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/id-card-solid.svg`}/>
+  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
+  {`My publicInbox`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
+  {`Respuesta rapida y con preferencia`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_d6e7bcf047e9922d6cabe6c9513bf3da () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.linux.org/`} passHref={true}>
+  <img alt={`Linux`} css={{"height": "4em", "width": "auto"}} src={`/Linux.jpeg`}/>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_4d47b1cf8511869a83e21c0804162843 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.python.org/`} passHref={true}>
+  <img alt={`Python`} css={{"height": "4em", "width": "auto"}} src={`/python_original.png`}/>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_e8d310653ad6f967152a327fed3eac56 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://lucide.dev/icons/`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
+  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
+  <img alt={`ICON Tutoriales`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/apple.svg`}/>
+  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
+  {`ICON Tutoriales`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
+  {`Ejemplos de iconos precargados`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_f9216fecd0a81fb423fa5cbbd036d214 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.tiktok.com/@pepearagonlaguna`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
+  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
+  <img alt={`Tiktok`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/tiktok.svg`}/>
+  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
+  {`Tiktok`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
+  {`Videos mas vistos`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_d719f690c27676ece6184d1d5a3c1ceb () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.redhat.com/es`} passHref={true}>
+  <img alt={`redhad`} css={{"width": "2em"}} src={`/icons/redhat.svg`}/>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_25b53a0cbedaf9bdd3a05c64ce60fdbb () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"fontSize": "0.9em", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.instagram.com/josearagonlaguna/`} passHref={true}>
+  {`copy right 2023 - 2024 Pp Aragon Tours`}
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
 export function Link_5ca56509758f961ad7a57c6293a11d60 () {
 
 
@@ -334,45 +265,6 @@ export function Link_5ca56509758f961ad7a57c6293a11d60 () {
   )
 }
 
-export function Link_4d47b1cf8511869a83e21c0804162843 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.python.org/`} passHref={true}>
-  <img alt={`Python`} css={{"height": "4em", "width": "auto"}} src={`/python_original.png`}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_01aed9cc6aeff3543c30d1e16fa9d418 () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.linux.org/`} passHref={true}>
-  <img alt={`linux`} css={{"width": "2em"}} src={`/icons/linux.svg`}/>
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
-export function Link_25b53a0cbedaf9bdd3a05c64ce60fdbb () {
-
-
-
-  return (
-    <RadixThemesLink asChild={true} css={{"fontSize": "0.9em", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
-  <NextLink href={`https://www.instagram.com/josearagonlaguna/`} passHref={true}>
-  {`copy right 2023 - 2024 Pp Aragon Tours`}
-</NextLink>
-</RadixThemesLink>
-  )
-}
-
 export function Link_e6342cd15cd893d0dca3c465086f1e2d () {
 
 
@@ -393,6 +285,114 @@ export function Link_e6342cd15cd893d0dca3c465086f1e2d () {
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_e406046821f422d4c59c1e05c38a4a86 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://github.com/mouredev/python-web`} passHref={true}>
+  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
+  <img css={{"height": "1.5em", "weight": "1.5em"}} src={`/GitHub2.jpeg`}/>
+  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "marginTop": "-0.5em"}}>
+  {`  donde la magia se vuelve real,tsn real que solo las personas mas exitosas
+                    lo pueden ver y resolver
+                    `}
+</RadixThemesText>
+</RadixThemesFlex>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_e840c43d2b70cdbf996242e0158f6dd2 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(false) ? `_blank` : ``}>
+  <NextLink href={`/cursos`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
+  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
+  <img alt={`Cursos Gratis`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/paperclip.svg`}/>
+  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
+  {`Cursos Gratis`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
+  {`Consulta cursos para aprender programaciòn`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_836876734fb2f591f67d0f7f4a802dbb () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.youtube.com/channel/UCzPoiGtg9DKxb3YpB0x5VyQ`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
+  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
+  <img alt={`youtube canal primario`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/youtube.svg`}/>
+  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
+  {`youtube canal primario`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
+  {`emprendimiento en proceso`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_3a019339ad2d60af43f2d78cae79ae7d () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.youtube.com/watch?v=n2YrGsXJC6Y`} passHref={true}>
+  <RadixThemesButton css={{"width": "100%", "height": "100%", "display": "block", "padding": "0.5em", "borderRadius": "em", "backgroundColor": "#171F26", "color": "#F1F2F4", "whiteSpace": "normal", "textAlign": "start", "align": "start", "alingItens": "start", "&:hover": {"backgroundColor": "#087ec4"}}} radius={`full`}>
+  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
+  <img alt={`Mouredev Aprende Python web FLEX`} css={{"width": "2em", "height": "2em", "margin": "0.9em"}} src={`/icons/python.svg`}/>
+  <RadixThemesFlex align={`start`} css={{"alignItems": "start", "margin": "-0.5em", "paddingTop": "0.5em", "paddingBottom": "0.5em", "paddingInlineStart": "0.5em", "paddingInlineEnd": "0.5em"}} direction={`column`} gap={`0`}>
+  <RadixThemesText as={`p`} css={{"fontSize": "em", "fontFamily": "Poppins", "fontWeight": "900", "color": "#F1F2F4"}}>
+  {`Mouredev Aprende Python web FLEX`}
+</RadixThemesText>
+  <RadixThemesText as={`p`} css={{"fontSize": "0.9em", "fontFamily": "Poppins", "fontWeight": "100", "color": "#C3C7CB"}}>
+  {`Video tutorial de 7 horas desde cero`}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesButton>
+</NextLink>
+</RadixThemesLink>
+  )
+}
+
+export function Link_01aed9cc6aeff3543c30d1e16fa9d418 () {
+
+
+
+  return (
+    <RadixThemesLink asChild={true} css={{"width": "100%", "textDecoration": "none", "&:hover": null}} target={isTrue(true) ? `_blank` : ``}>
+  <NextLink href={`https://www.linux.org/`} passHref={true}>
+  <img alt={`linux`} css={{"width": "2em"}} src={`/icons/linux.svg`}/>
 </NextLink>
 </RadixThemesLink>
   )
