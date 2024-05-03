@@ -15,15 +15,27 @@ from link_bio.styles.fonts import Font as Font,FontWeight
 ## se agregan iconos y ligas
 
 
-def header(details=True) -> rx.Component:
+def header(details=True, live =False) -> rx.Component:
     return rx.vstack (
            rx.hstack(
-              rx.avatar(color_scheme="sky", variant="solid", 
-                        high_contrast=False, fallback="PA",size="7",radius="full",
-                        src="/pp.png",
-                        padding="6px",
-                        border= f"5px solid {Color.PRIMARY.value}"
-                        ),
+            rx.chakra.avatar
+                        (
+                rx.cond
+                    (
+                    live,
+                    rx.chakra.avatar_badge
+                      (
+                       box_size=Size.MEDIUM.value,
+                       bg=Color.PURPLE.value,
+                       border_color=Color.PURPLE.value
+                      )
+              ),       
+              color_scheme="sky", variant="solid", 
+              high_contrast=False, fallback="PA",size="xl",radius="full",
+              src="/pp.png",
+              padding=Size.ZERO.value,
+              border= f"5px solid {Color.PRIMARY.value}"
+              ),
               rx.vstack(
                   rx.heading ("Pp Aragon Laguna",
                               font_family = Font.TITLE.value ,
@@ -47,7 +59,7 @@ def header(details=True) -> rx.Component:
 # flex manejo de elementos en horizontal con espaciado
 # atributo direction por default row y puede cabiarse a column
 # rx.cond nos sirve para agregar condiciones en reflex como un if
-           rx.cond (
+          rx.cond (
                details,
                rx.vstack(
                   rx.flex(

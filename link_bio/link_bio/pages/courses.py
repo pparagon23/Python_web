@@ -9,6 +9,7 @@ from link_bio.views.courses_links import courses_links
 from link_bio.views.sponsor import sponsors
 from link_bio.styles.styles import Size
 import link_bio.views.constants as constants
+from link_bio.state.PageState import PageState
 
 
 ## importa el index 
@@ -18,7 +19,8 @@ import link_bio.views.constants as constants
     title=utils.index_title,
     description=utils.index_description,
     image=utils.preview,
-    meta=utils.index_meta
+    meta=utils.index_meta,
+    on_load=PageState.check_live
 )
 
 ### Lang se importa de utils el lenguaje
@@ -28,7 +30,10 @@ def courses() -> rx.Component:
         navbar(),
         rx.center(
             rx.vstack(
-                header(details=False),
+                header(
+                    False,
+                    PageState.is_live
+                    ),
                 courses_links(),
                 sponsors(),
                 max_width=styles.MAX_WITDH,

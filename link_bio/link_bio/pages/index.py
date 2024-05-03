@@ -1,6 +1,7 @@
 import reflex as rx
 import link_bio.views.utils as utils
 import link_bio.styles.styles as styles
+import link_bio.state.PageState as PageState
 from link_bio.components.navbar import navbar
 from link_bio.components.footer import footer
 from link_bio.views.header import header
@@ -8,22 +9,29 @@ from link_bio.views.index_links import index_links
 from link_bio.views.sponsor import sponsors
 from link_bio.styles.styles import Size
 import link_bio.views.constants as constants
-
+from link_bio.state.PageState import PageState
+        
+       
+## se agrega on_load para cargar el estado de lo contrario se tendria que hacer
+## atraves de un boton o una acion    
 @rx.page(
     title=utils.index_title,
     description=utils.index_description,
     image=utils.preview,
-    meta=utils.index_meta
+    meta=utils.index_meta,
+    on_load=PageState.check_live
 )
 
 ### Lang se importa de utils el lenguaje
+## rx.text conexion con bankend  linea 38
 def index() -> rx.Component:
     return rx.box(
         utils.lang(),
         navbar(),
         rx.center(
             rx.vstack(
-                header(),
+                rx.text(PageState.say_hello),
+                header(live=PageState.is_live),
                 index_links(),
                 sponsors(),
                 max_width=styles.MAX_WITDH,
