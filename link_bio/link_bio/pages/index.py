@@ -19,7 +19,7 @@ from link_bio.state.PageState import PageState
     description=utils.index_description,
     image=utils.preview,
     meta=utils.index_meta,
-    on_load=PageState.check_live
+    on_load=[PageState.check_live,PageState.featured_links]
 )
 
 ### Lang se importa de utils el lenguaje
@@ -31,8 +31,11 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 rx.text(PageState.say_hello),
-                header(live=PageState.is_live),
-                index_links(),
+                header(
+                    live=PageState.is_live,
+                    live_title=PageState.live_title
+                    ),
+                index_links(PageState.featured_info),
                 sponsors(),
                 max_width=styles.MAX_WITDH,
                 width="100%",

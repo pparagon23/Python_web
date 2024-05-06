@@ -7,17 +7,21 @@ from link_bio.styles.colors import Color as Color
 from link_bio.components.title import title as title
 import link_bio.views.constants as constants
 from link_bio.styles.fonts import Font as Font,FontWeight
+from link_bio.components.link_button import links_button
 
 ## manejo de vstack elementos en vertical
 ## maneji de hstack elementos horizontal
 ##se ingresan los colores
 ## en avatar se agrega imagen desde la carpeta assets
 ## se agregan iconos y ligas
+## se agrega boton de twitch y pardapedo linea 30 con blink en hojas de css linea 35
+## linea 26 se agrega titulo del live twitch que esta en directo
 
 
-def header(details=True, live =False) -> rx.Component:
+def header(details=True, live =False, live_title="") -> rx.Component:
     return rx.vstack (
            rx.hstack(
+            rx.link(   
             rx.chakra.avatar
                         (
                 rx.cond
@@ -25,9 +29,12 @@ def header(details=True, live =False) -> rx.Component:
                     live,
                     rx.chakra.avatar_badge
                       (
+                       rx.image(src="/icons/twitch.svg"
+                           ),
                        box_size=Size.MEDIUM.value,
                        bg=Color.PURPLE.value,
-                       border_color=Color.PURPLE.value
+                       border_color=Color.PURPLE.value,
+                       class_name="blink"
                       )
               ),       
               color_scheme="sky", variant="solid", 
@@ -36,6 +43,8 @@ def header(details=True, live =False) -> rx.Component:
               padding=Size.ZERO.value,
               border= f"5px solid {Color.PRIMARY.value}"
               ),
+               href=constants.TWITCH_URL      
+                        ),
               rx.vstack(
                   rx.heading ("Pp Aragon Laguna",
                               font_family = Font.TITLE.value ,
@@ -70,6 +79,14 @@ def header(details=True, live =False) -> rx.Component:
                          info_text("42","años de edad"),
                          width="100%"
                         ),
+                  rx.cond (
+                      live, links_button(
+                          "En directo",
+                          live_title,
+                          "/icons/twitch.svg",
+                          constants.TWITCH_URL,
+                         )
+                      ),
                   
                   rx.text(""" soy ingeniero
                            y me encanta programar y ver como queda

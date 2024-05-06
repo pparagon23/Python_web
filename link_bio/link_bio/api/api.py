@@ -1,8 +1,10 @@
 import link_bio.views.constants as constants
 from link_bio.api.TwitchAPI import TwitchAPI
+from .SupabaseAPI import SupabaseAPI
 
 ## Inicializar la clase de TwitchAPI
 TWITCH_API = TwitchAPI() 
+SUPABASE_API = SupabaseAPI()
 
 ## Estados Backend
 def hello() -> str:
@@ -16,6 +18,12 @@ async def repo() -> str:
 #    if user == "pparagon":
 #       return True
 #    return False
+#operacion externa expuessta 
 
-async def live(user:str) -> bool:
+async def live(user:str) -> dict:
      return TWITCH_API.live(user)
+ 
+ ##operacion interna sin exponer 
+ 
+async def featured() -> list:
+     return SUPABASE_API.featured()

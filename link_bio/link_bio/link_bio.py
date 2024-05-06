@@ -8,7 +8,7 @@ from link_bio.api.api import hello,repo, live
      
 app = rx.App(
     stylesheets=styles.STYLESHEETS,
-    style=styles.BASE_STYLE,
+    style=styles.BASE_STYLE, 
     head_components=[
          rx.script(src=f"https://www.googletagmanager.com/gtag/js?id=G-MFEQYK7KS"),
          rx.script(

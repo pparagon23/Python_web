@@ -13,7 +13,7 @@ import link_bio.views.constants as constants
 ## el color gris es e fondo del area y el width el tamano
 ## envia por correo on click
 
-def index_links() -> rx.Component:
+def index_links( featured = [] ) -> rx.Component:
     return rx.vstack( 
            title ("Comunidad"),
            links_button("Cursos Gratis",
@@ -39,6 +39,30 @@ def index_links() -> rx.Component:
                         "emprendimiento en proceso",
                         "/icons/youtube.svg",
                         constants.YOUTUBE_URL),
+           
+           #rx.cond(
+           #    len (featured) > 0,
+           #    rx.vstack(
+           #        title("Destacado"),
+           #        rx.foreach(
+           #         featured,
+           #         lambda item: rx.responsive_grid(
+           #            rx.responsive_grid(
+           #              rx.link (
+           #                  rx.image(
+           #                      src=item["image"]
+           #                      ),
+           #                  rx.text(
+           #                    item["title"]
+           #                  ),
+           #                  href=item["url"],
+           #                  is_external=True
+           #              )
+           #            )
+           #          ) 
+           #        )
+           #    )
+           #    ),
            
            title ("Recursos"),
            links_button("CSS Tutorial",

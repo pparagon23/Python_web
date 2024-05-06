@@ -10,6 +10,7 @@ TIKTOK_URL= "https://www.tiktok.com/@pepearagonlaguna"
 INSTAGRAM_URL="https://www.instagram.com/josearagonlaguna/"
 FACEBOOK_URL="https://www.facebook.com/jose.aragonlaguna?locale=es_LA"
 YOUTUBE_URL="https://www.youtube.com/channel/UCzPoiGtg9DKxb3YpB0x5VyQ"
+TWITCH_URL="https://www.twitch.tv/pparagon23"
 
 ## Recursos
 FLEXDOC_URL="https://reflex.dev/docs/library/layout/flex/"
