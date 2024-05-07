@@ -1,1 +1,0 @@
-module.exports = {"siteUrl": "https://pparagondev.reflex.run", "generateRobotsTxt": true, "outDir": "_static"}
