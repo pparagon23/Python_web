@@ -10,6 +10,7 @@ config = rx.Config(
                          "http://192.168.100.39:3000", 
                          "https://python-web-4a2y.onrender.com"
                          "https://pparagondev.reflex.run"
+                         "https://python-web-ochre.vercel.app"
                          ]
     
 )
