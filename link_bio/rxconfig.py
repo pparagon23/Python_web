@@ -11,6 +11,9 @@ config = rx.Config(
                          "https://python-web-4a2y.onrender.com"
                          "https://pparagondev.reflex.run"
                          "https://python-web-ochre.vercel.app"
+                         "https://python-web-pparagon23s-projects.vercel.app"
+                         "https://python-web-git-main-pparagon23s-projects.vercel.app"
+                         "https://python-her7slaaw-pparagon23s-projects.vercel.app/"
                          ]
     
 )
