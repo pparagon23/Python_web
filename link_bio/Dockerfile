@@ -12,8 +12,4 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 3000
 EXPOSE 8000
-CMD reflex run --env prod 
-
-
-
-
+CMD reflex run --env prod --frontend-only
