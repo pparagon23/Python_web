@@ -10,6 +10,5 @@ RUN python3.12 -m venv $VIRTUAL_ENV
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
-EXPOSE 3000
-EXPOSE 8000
-CMD reflex run --env prod --frontend-only
+
+CMD reflex run --env prod --backend-only
