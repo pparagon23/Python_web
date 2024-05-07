@@ -6,14 +6,10 @@ config = rx.Config(
     app_name="link_bio",
    # api_url="https://python-web-4a2y.onrender.com", #back end
     cors_allowed_origins=[ #Front End
-                         "http://localhost:3000"
+                         "http://localhost:3000",
                         # "http://192.168.100.39:3000", 
-                        # "https://python-web-4a2y.onrender.com"
-                        # "https://pparagondev.reflex.run"
-                        # "https://python-web-ochre.vercel.app"
-                        # "https://python-web-pparagon23s-projects.vercel.app"
-                        # "https://python-web-git-main-pparagon23s-projects.vercel.app"
-                       #  "https://python-her7slaaw-pparagon23s-projects.vercel.app/"
+                        "https://python-web-five.vercel.app"
+              
                          ]
     
 )
