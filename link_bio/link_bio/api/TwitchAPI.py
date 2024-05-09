@@ -2,6 +2,8 @@ import os
 import dotenv
 import requests
 import time
+from link_bio.model.Live import Live
+ 
 
 ## CARGAR variables de entorno fichero .env en raiz del proyecto dotenv
 ## os carga las variables de entorno a las variables del fichero
@@ -45,7 +47,7 @@ class TwitchAPI:
     def token_valid(self) -> bool:
         return time.time() < self.token_exp
 
-    def live(self, user: str) -> dict:
+    def live(self, user: str) -> Live:
 
         if not self.token_valid():
             self.generate_token()
@@ -62,6 +64,7 @@ class TwitchAPI:
             data = response.json()["data"]
             print (data)
             print (data[0]["title"])
-            return {"live" : True, "title":(data[0]["title"])}
+            return Live(live=True,title=data[0]["title"])
+           # return {"live" : True, "title":(data[0]["title"])}
 
-        return {"live" : False, "title":""}
+        return Live(live=True, title="")

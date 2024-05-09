@@ -1,6 +1,7 @@
 import link_bio.views.constants as constants
 from link_bio.api.TwitchAPI import TwitchAPI
 from .SupabaseAPI import SupabaseAPI
+from link_bio.model.Live import Live
 
 ## Inicializar la clase de TwitchAPI
 TWITCH_API = TwitchAPI() 
@@ -20,7 +21,7 @@ async def repo() -> str:
 #    return False
 #operacion externa expuessta 
 
-async def live(user:str) -> dict:
+async def live(user:str) -> Live:
      return TWITCH_API.live(user)
  
  ##operacion interna sin exponer 

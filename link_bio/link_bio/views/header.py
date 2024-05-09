@@ -8,6 +8,7 @@ from link_bio.components.title import title as title
 import link_bio.views.constants as constants
 from link_bio.styles.fonts import Font as Font,FontWeight
 from link_bio.components.link_button import links_button
+from link_bio.model.Live import Live
 
 ## manejo de vstack elementos en vertical
 ## maneji de hstack elementos horizontal
@@ -18,7 +19,7 @@ from link_bio.components.link_button import links_button
 ## linea 26 se agrega titulo del live twitch que esta en directo
 
 
-def header(details=True, live =False, live_title="") -> rx.Component:
+def header(details=True, live_status = Live(live=False,title="")) -> rx.Component:
     return rx.vstack (
            rx.hstack(
             rx.link(   
@@ -26,7 +27,7 @@ def header(details=True, live =False, live_title="") -> rx.Component:
                         (
                 rx.cond
                     (
-                    live,
+                    live_status.live,
                     rx.chakra.avatar_badge
                       (
                        rx.image(src="/icons/twitch.svg"
@@ -79,10 +80,11 @@ def header(details=True, live =False, live_title="") -> rx.Component:
                          info_text("42","años de edad"),
                          width="100%"
                         ),
+                  
                   rx.cond (
-                      live, links_button(
+                      live_status.live, links_button(
                           "En directo",
-                          live_title,
+                          live_status.title,
                           "/icons/twitch.svg",
                           constants.TWITCH_URL,
                          )

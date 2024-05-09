@@ -1,5 +1,6 @@
 import reflex as rx 
 from link_bio.api.api import hello,live,featured
+from link_bio.model.Live import Live
 
 ##State BACKEND 
 #### Se agrega conexion backend rx.state
@@ -16,9 +17,8 @@ USER="XTASIAEGO"
 #print (f"---------{USER}-----")
 class PageState(rx.State):
     """Define your app state here."""
-    is_live: bool
-    live_title : str
-    featured_info : list
+    live_status =   Live(live=False,title="")
+    featured_info : list[dict]
     
     @rx.var
     def say_hello(self):
@@ -27,9 +27,7 @@ class PageState(rx.State):
    ## self para datos propios y await para esperar la respuesta del backend valor en api.py
     async def check_live (self): 
         print (f"22222222------{USER}-----")
-        live_data = await live(USER)
-        self.is_live= live_data["live"]
-        self.live_title = live_data["title"]
+        self.live_status = await live(USER)
         
     async def featured_links (self):
         self.featured_info = await featured()
