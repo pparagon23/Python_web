@@ -2,10 +2,13 @@ import link_bio.views.constants as constants
 from link_bio.api.TwitchAPI import TwitchAPI
 from .SupabaseAPI import SupabaseAPI
 from link_bio.model.Live import Live
+from link_bio.model.Featured import Featured
+from .ConfigCatAPI import ConfigCatAPI
 
 ## Inicializar la clase de TwitchAPI
 TWITCH_API = TwitchAPI() 
 SUPABASE_API = SupabaseAPI()
+CONFICAT_API = ConfigCatAPI()
 
 ## Estados Backend
 def hello() -> str:
@@ -26,5 +29,9 @@ async def live(user:str) -> Live:
  
  ##operacion interna sin exponer 
  
-async def featured() -> list:
+async def featured() -> list[Featured]:
      return SUPABASE_API.featured()
+ 
+async def schedule ()->dict:
+    print (CONFICAT_API.schedule()) ## imprime los valores de ConfigCat
+    return CONFICAT_API.schedule()

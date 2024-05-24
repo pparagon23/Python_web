@@ -1,3 +1,5 @@
+configcat-client==9.0.3
 python-dotenv==1.0.1
-reflex==0.4.9
-supabase
+reflex==0.5.1
+supabase==2.4.5
+pytz

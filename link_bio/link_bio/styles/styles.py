@@ -7,6 +7,8 @@ from .fonts import Font as Font,FontWeight
 
 #constantes
 MAX_WITDH="500px"
+FADEIN_ANIMATION = "animate__animated animate__bounce animate__delay-2s"
+BOUNCEIN_ANIMATION = "animate__animated animate__zoomInRight animate__delay-2s"
 
 #tamanos
 ## SMALL="8px" px no se usa para aplicaciones responsive para ello se usa
@@ -20,8 +22,9 @@ MAX_WITDH="500px"
 STYLESHEETS =[
     "https://fonts.googleapis.com/css2?family=Poppins:wght@300:500&display=swap",
     "https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap",
+    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css",
     "/css/styles.css"
-]
+    ]
 
 class Size(Enum):
       ZERO="-0.5em"
@@ -31,7 +34,16 @@ class Size(Enum):
       LARGE="1.5em"
       BIG="2em"
       VERY_BIG="4em"
-      
+  
+class Spacing(Enum):
+    ZERO = "0"
+    VERY_SMALL = "1"
+    SMALL = "3"
+    DEFAULT = "4"
+    LARGE = "5"
+    BIG = "6"
+    MEDIUM_BIG = "7"
+    VERY_BIG = "9"    
     
 ## BASE Stylos para botones y links globales
 ## _hover cambia el color de algo al pasar el raton

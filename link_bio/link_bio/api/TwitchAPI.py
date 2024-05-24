@@ -67,4 +67,4 @@ class TwitchAPI:
             return Live(live=True,title=data[0]["title"])
            # return {"live" : True, "title":(data[0]["title"])}
 
-        return Live(live=True, title="")
+        return Live(live=False, title="") ## Valor del directo si encuantra conectado

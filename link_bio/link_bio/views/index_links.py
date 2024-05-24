@@ -1,8 +1,11 @@
 import reflex as rx
 import link_bio.routes as Route
 from link_bio.components.link_button import links_button
+from link_bio.components.featured_link import featured_link
 from link_bio.components.title import title
 import link_bio.views.constants as constants
+from link_bio.model.Featured import Featured
+from link_bio.styles.styles import Size as Size
 
 
 ## vista para mandar llamar al componente button
@@ -13,9 +16,9 @@ import link_bio.views.constants as constants
 ## el color gris es e fondo del area y el width el tamano
 ## envia por correo on click
 
-def index_links( featured = [] ) -> rx.Component:
+def index_links( featured :list [Featured] ) -> rx.Component:
     return rx.vstack( 
-           title ("Comunidad"),
+        title ("Comunidad"),
            links_button("Cursos Gratis",
                         "Consulta cursos para aprender programaciòn",
                         "/icons/paperclip.svg",  
@@ -39,32 +42,24 @@ def index_links( featured = [] ) -> rx.Component:
                         "emprendimiento en proceso",
                         "/icons/youtube.svg",
                         constants.YOUTUBE_URL),
+         
+        rx.cond(
+            featured,
+            rx.vstack(
+                title("Destacado"),
+                rx.chakra.responsive_grid(
+                rx.foreach(
+                    featured, 
+                    featured_link,
+                    ),
+                columns=[1,2],
+                spacing="2"
+                ),
+                spacing="2"   
+              )
+            ),
            
-           #rx.cond(
-           #    len (featured) > 0,
-           #    rx.vstack(
-           #        title("Destacado"),
-           #        rx.foreach(
-           #         featured,
-           #         lambda item: rx.responsive_grid(
-           #            rx.responsive_grid(
-           #              rx.link (
-           #                  rx.image(
-           #                      src=item["image"]
-           #                      ),
-           #                  rx.text(
-           #                    item["title"]
-           #                  ),
-           #                  href=item["url"],
-           #                  is_external=True
-           #              )
-           #            )
-           #          ) 
-           #        )
-           #    )
-           #    ),
-           
-           title ("Recursos"),
+        title ("Recursos"),
            links_button("CSS Tutorial",
                         "Manejo de CSS para flex",
                          "/icons/file.svg",
@@ -91,7 +86,6 @@ def index_links( featured = [] ) -> rx.Component:
                         constants.EMAIL,
                         "/icons/envelope-regular.svg",
                         f"mailto:{constants.EMAIL}"
-                        
                         ),
            bg="grey",
            width="100%"

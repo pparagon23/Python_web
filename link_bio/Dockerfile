@@ -9,6 +9,12 @@ RUN python3.12 -m venv $VIRTUAL_ENV
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
+RUN reflex init
 
-CMD reflex run --env prod --backend-only 
+## BackEnd en render
+#CMD reflex run --env prod --backend-only 
+
+## para docker local
+CMD reflex run --env prod 
+
 

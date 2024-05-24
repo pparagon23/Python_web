@@ -9,6 +9,8 @@ import link_bio.views.constants as constants
 from link_bio.styles.fonts import Font as Font,FontWeight
 from link_bio.components.link_button import links_button
 from link_bio.model.Live import Live
+from link_bio.state.PageState import PageState
+import link_bio.styles.styles as styles
 
 ## manejo de vstack elementos en vertical
 ## maneji de hstack elementos horizontal
@@ -19,7 +21,7 @@ from link_bio.model.Live import Live
 ## linea 26 se agrega titulo del live twitch que esta en directo
 
 
-def header(details=True, live_status = Live(live=False,title="")) -> rx.Component:
+def header(details=True, live_status = Live(live=False,title=""), next_live="") -> rx.Component:
     return rx.vstack (
            rx.hstack(
             rx.link(   
@@ -82,13 +84,32 @@ def header(details=True, live_status = Live(live=False,title="")) -> rx.Componen
                         ),
                   
                   rx.cond (
-                      live_status.live, links_button(
-                          "En directo",
-                          live_status.title,
-                          "/icons/twitch.svg",
-                          constants.TWITCH_URL,
-                         )
-                      ),
+                      PageState.live_status.live, 
+                      links_button(
+                            "En directo",
+                            live_status.title,
+                            "/icons/twitch.svg",
+                            constants.TWITCH_URL,
+                            animated=True,
+                         ),
+                         rx.box(
+                         #links_button(title:str,body:str,image:str, url:str, is_external=True,animated=False)    
+                          rx.cond(
+                            PageState.next_live,
+                              links_button(
+                                "Próximo directo",
+                                PageState.next_live,
+                                "/icons/twitch.svg",
+                                constants.TWITCH_URL,
+                                is_external=True,
+                                animated=True
+                            ),
+                        ),
+                        width="100%",
+                        on_mount=PageState.check_schedule,
+                        class_name=styles.BOUNCEIN_ANIMATION ## Animacion solo para objetos los butones no soporta
+                    )
+                ),
                   
                   rx.text(""" soy ingeniero
                            y me encanta programar y ver como queda
@@ -97,12 +118,13 @@ def header(details=True, live_status = Live(live=False,title="")) -> rx.Componen
                            color=TextColor.BODY.value),
                            spacing="4"
                   ),
-                
               
-             
            ),
            spacing="3",
            align_items="start",
            width="100%"
             
            )
+    
+    def experience() -> int:
+        return datetime.date.today().year - 2010

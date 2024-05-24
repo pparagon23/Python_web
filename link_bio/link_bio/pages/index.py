@@ -1,7 +1,6 @@
 import reflex as rx
 import link_bio.views.utils as utils
 import link_bio.styles.styles as styles
-import link_bio.state.PageState as PageState
 from link_bio.components.navbar import navbar
 from link_bio.components.footer import footer
 from link_bio.views.header import header
@@ -31,7 +30,8 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 rx.text(PageState.say_hello),
-                header(live_status=PageState.live_status),
+                header(live_status=PageState.live_status,
+                       next_live=PageState.next_live),
                 index_links(PageState.featured_info),
                 sponsors(),
                 max_width=styles.MAX_WITDH,
